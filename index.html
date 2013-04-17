@@ -10,6 +10,7 @@
 
     <style type="text/css">
       body{
+        background-color:#e9e3c3 ;
       
       }
       .container{
@@ -18,12 +19,13 @@
       .video-js{
         margin: 80px auto;
       }
-      #bg {
+      /*#bg {
         position: fixed; 
         top: -50%; 
         left: -50%; 
-        width: 200%; 
-        height: 200%;
+        width: 100%;
+        height:100%;
+        background-repeat: repeat-x;
       }
       #bg img {
         position: absolute; 
@@ -34,34 +36,36 @@
         margin: auto; 
         min-width: 50%;
         min-height: 50%;
-      }
+        
+      }*/
       .vjs-controls {
 
-        background: rgb(185, 185, 185);
+        background: rgb(85, 85, 70);
       }
       .vjs-mute-control div {
-background: none;}
-.vjs-seek-handle {
-background-color: #a1aa7d;
-}
-.vjs-seek-handle:hover, .vjs-seek-handle:focus {
-background-color: #9bab5c;
-}
-.vjs-play-progress {
-background: #9bab5c;
-left: -1px;
-}
+        background: none;
+      }
+      .vjs-seek-handle {
+        background-color: #bbcb7d;
+      }
+      .vjs-seek-handle:hover, .vjs-seek-handle:focus {
+        background-color: #99ad49;
+      }
+      .vjs-play-progress {
+        background: #99ad49;
+        left: -1px;
+      }
     </style>
 
   </head>
   <body>
-     <div id="bg">
-  <img src="images/11.jpg" alt="">
-    </div>
+      <!--<div id="bg">
+        <img src="images/bg.jpg" alt="">
+      </div>-->
 
       <div class='container'>
         <!--[if !IE]> -->
-        <video class="video-js" controls preload="auto" width="620" height="349" poster="images/screen.jpg" data-setup="{}">
+        <video class="video-js" controls preload="auto" width="620" height="349" poster="images/screen_2.jpg" data-setup="{}">
           <source src="Cuti4.m4v" type="video/mp4">
           <!-- <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm"> -->
         </video>
