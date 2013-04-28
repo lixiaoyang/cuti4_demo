@@ -15,7 +15,7 @@
       background: url(images/1.jpg)no-repeat center center fixed;
       background-size:cover;
       background-color: rgb(3, 3, 3);
-      
+      font-family: "lucida grande","lucida sans unicode",lucida,"Helvetica Neue",helvetica,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;     
     }
     .homepage .rightside {
       position: fixed;
@@ -42,8 +42,6 @@
     }
     h1 {
       font-size: 50px;
-    }
-    h1{
       line-height: 60px;
       }
     .homepage .rightside .introduction .intro {
@@ -51,6 +49,8 @@
       margin-bottom: 60px;
       font-size: 20px;
       line-height: 30px;
+      font-weight: bold;
+
      
     }
     .homepage .login-method li img {
@@ -78,15 +78,20 @@
       background-repeat: repeat-x;
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
+      -o-border-radius: 4px;
+      -ms-border-radius: 4px;
       border-radius: 4px;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
       filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
       -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
       -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+      -ms-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+      -o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
       -webkit-transition: background 1.5s ease;
       -moz-transition: background 1.5s ease;
       -o-transition: background 1.5s ease;
+      -ms-transition: background 1.5s ease;
       transition: background 1.5s ease;
     }
     
@@ -101,21 +106,27 @@
 
 
     .btn {
-      background-image:-webkit-gradient(rgba(211, 230, 235, 0.66),rgba(143, 240, 240, 0.59));
-      background-image: -moz-linear-gradient( rgba(211, 230, 235, 0.66),rgba(143, 240, 240, 0.59));
-      background-image: -o-linear-gradient( rgba(211, 230, 235, 0.66),rgba(143, 240, 240, 0.59));
-      background-image:linear-gradient(rgba(211, 230, 235, 0.66),rgba(143, 240, 240, 0.59));
+      background:-webkit-linear-gradient(rgba(211, 230, 235, 0.66),rgba(143, 240, 240, 0.59));
+      background: -moz-linear-gradient( rgba(211, 230, 235, 0.66),rgba(143, 240, 240, 0.59));
+      background: -o-linear-gradient( rgba(211, 230, 235, 0.66),rgba(143, 240, 240, 0.59));
+     
+      background: -ms-linear-gradient( rgba(211, 230, 235, 0.66),rgba(143, 240, 240, 0.59));
+      background:linear-gradient(rgba(211, 230, 235, 0.66),rgba(143, 240, 240, 0.59));
+     
 
     }
 
 
-    .btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
+    .btn:hover, .btn:focus{
       background-color: rgba(148, 199, 221, 0.5);
-    }
-    .btn:hover, .btn:focus {
+
       color: rgb(255, 255, 255);
       text-decoration: none;
-      background-image: linear-gradient(to bottom,rgba(48, 199, 181, 0),rgba(124, 221, 190, 0.5));
+      background-image:-webkit-linear-gradient(to bottom,rgba(48, 199, 181, 0),rgba(124, 221, 190, 0.5));
+      background-image:-ms-linear-gradient(to bottom,rgba(48, 199, 181, 0),rgba(124, 221, 190, 0.5));
+      background-image:-o-linear-gradient(to bottom,rgba(48, 199, 181, 0),rgba(124, 221, 190, 0.5));
+      background-image:-moz-linear-gradient(to bottom,rgba(48, 199, 181, 0),rgba(124, 221, 190, 0.5));
+      background-image:linear-gradient(to bottom,rgba(48, 199, 181, 0),rgba(124, 221, 190, 0.5));
     }
       
     </style>
